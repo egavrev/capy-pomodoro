@@ -17,14 +17,27 @@ android {
         versionName = "1.0"
     }
 
+    // Release signing: a permanent key kept outside the repo (CI gets it from repository secrets).
+    // Without it, release builds fall back to the debug key — fine for testing, but every machine's
+    // debug key differs, so installed copies couldn't be updated in place.
+    val releaseKeystore = System.getenv("CAPY_KEYSTORE_FILE")?.let { file(it) }?.takeIf { it.exists() }
+    signingConfigs {
+        if (releaseKeystore != null) {
+            create("release") {
+                storeFile = releaseKeystore
+                storePassword = System.getenv("CAPY_KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("CAPY_KEY_ALIAS") ?: "capy"
+                keyPassword = System.getenv("CAPY_KEYSTORE_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            // Signed with the debug key so the release APK can be sideloaded straight away.
-            // Swap for a real keystore before publishing to Google Play.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.findByName("release") ?: signingConfigs.getByName("debug")
         }
     }
 
@@ -36,6 +49,8 @@ android {
     androidResources {
         // SoundPool needs the chime uncompressed inside the APK.
         noCompress += listOf("ogg", "mp3", "m4a")
+        // Default ignore list plus the README that sits next to the audio files.
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~:!README.md"
     }
 
     // Audio lives in the repo-level assets/audio folder (see HANDOFF.md). Files dropped there

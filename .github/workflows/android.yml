@@ -29,7 +29,19 @@ jobs:
         run: ./gradlew --no-daemon testDebugUnitTest
 
       - name: Build debug + release APKs
-        run: ./gradlew --no-daemon assembleDebug assembleRelease
+        env:
+          CAPY_KEYSTORE_B64: ${{ secrets.CAPY_KEYSTORE_B64 }}
+          CAPY_KEYSTORE_PASSWORD: ${{ secrets.CAPY_KEYSTORE_PASSWORD }}
+        run: |
+          if [ -n "$CAPY_KEYSTORE_B64" ]; then
+            echo "$CAPY_KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/capy-release.jks"
+            export CAPY_KEYSTORE_FILE="$RUNNER_TEMP/capy-release.jks"
+            echo "Signing release with the Capy Pomodoro key"
+          else
+            echo "::warning::CAPY_KEYSTORE_B64 secret not set: release APK is signed with a throwaway debug key"
+          fi
+          ./gradlew --no-daemon assembleDebug assembleRelease
+          "$ANDROID_HOME"/build-tools/$(ls "$ANDROID_HOME"/build-tools | sort -V | tail -1)/apksigner verify --print-certs build/outputs/apk/release/*-release.apk | head -3
 
       - uses: actions/upload-artifact@v4
         with:
