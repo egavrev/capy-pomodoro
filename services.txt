@@ -1,0 +1,19 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{276d0b6 u0 com.capypomodoro/.timer.TimerService}
+    intent={act=com.capypomodoro.action.START cmp=com.capypomodoro/.timer.TimerService}
+    packageName=com.capypomodoro
+    processName=com.capypomodoro
+    baseDir=/data/app/~~wlVXv-zKydn9XUB4aZFicg==/com.capypomodoro-clHOZVuDnry37QY8Fgiyyw==/base.apk
+    dataDir=/data/user/0/com.capypomodoro
+    app=ProcessRecord{96b16f5 3505:com.capypomodoro/u0a174}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.capypomodoro
+    recentCallingUid=10174
+    allowStartForeground=PROC_STATE_TOP
+    startForegroundCount=1
+    infoAllowStartForeground=[callingPackage: com.capypomodoro; callingUid: 10174; uidState: TOP ; intent: Intent { act=com.capypomodoro.action.START cmp=com.capypomodoro/.timer.TimerService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:36; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null]
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=timer shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x6a color=0xffb8456a category=progress groupKey=silent actions=2 vis=PUBLIC)
+    createTime=-1m38s336ms startingBgTimeout=--
+    lastActivity=-1m38s336ms restartTime=-1m38s336ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1

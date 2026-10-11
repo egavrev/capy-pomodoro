@@ -1,0 +1,175 @@
+10-11 17:28:23.478 I/SdkSandboxManager(  484): No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10174, mPackageName='com.capypomodoro'}
+10-11 17:28:23.497 D/MediaPlayerList(  949): Name of package changed: com.capypomodoro
+10-11 17:28:23.502 I/ActivityTaskManager(  484): START u0 {flg=0x10000000 cmp=com.capypomodoro/.MainActivity} from uid 2000
+10-11 17:28:23.504 D/MediaPlayerList(  949): Name of package changed: com.capypomodoro
+10-11 17:28:24.334 D/CoreBackPreview(  484): Window{7e3b3e5 u0 Splash Screen com.capypomodoro}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@c22a10b, mPriority=0}
+10-11 17:28:24.381 I/ActivityManager(  484): Start proc 3505:com.capypomodoro/u0a174 for next-top-activity {com.capypomodoro/com.capypomodoro.MainActivity}
+10-11 17:28:24.711 D/nativeloader( 3505): Configuring classloader-namespace for other apk /data/app/~~wlVXv-zKydn9XUB4aZFicg==/com.capypomodoro-clHOZVuDnry37QY8Fgiyyw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~wlVXv-zKydn9XUB4aZFicg==/com.capypomodoro-clHOZVuDnry37QY8Fgiyyw==/lib/x86_64:/data/app/~~wlVXv-zKydn9XUB4aZFicg==/com.capypomodoro-clHOZVuDnry37QY8Fgiyyw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.capypomodoro
+10-11 17:28:24.726 V/GraphicsEnvironment( 3505): ANGLE Developer option for 'com.capypomodoro' set to: 'default'
+10-11 17:28:24.726 V/GraphicsEnvironment( 3505): ANGLE GameManagerService for com.capypomodoro: false
+10-11 17:28:25.143 D/CoreBackPreview(  484): Window{eebb6df u0 com.capypomodoro/com.capypomodoro.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@8db378a, mPriority=0}
+10-11 17:28:25.473 D/CarrierSvcBindHelper(  976): onPackageAdded: com.capypomodoro
+10-11 17:28:26.539 D/ImsResolver(  976): maybeAddedImsService, packageName: com.capypomodoro
+10-11 17:28:27.311 D/MediaPlayerList(  949): Name of package changed: com.capypomodoro
+10-11 17:28:27.311 D/MediaPlayerList(  949): Name of package changed: com.capypomodoro
+10-11 17:28:27.646 W/BackupTransportManager(  484): Package com.capypomodoro enabled setting: 0
+10-11 17:28:27.698 W/InputManager-JNI(  484): Input channel object '7e3b3e5 Splash Screen com.capypomodoro (client)' was disposed without first being removed with the input manager!
+10-11 17:28:27.811 I/GoogleInputMethodService( 1483): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.capypomodoro fieldId=-1 fieldName=null extras=null}, false)
+10-11 17:28:27.870 I/ActivityTaskManager(  484): Displayed com.capypomodoro/.MainActivity: +4s157ms
+10-11 17:28:28.506 D/CarrierSvcBindHelper(  976): onPackageModified: com.capypomodoro
+10-11 17:28:28.593 D/ImsResolver(  976): maybeAddedImsService, packageName: com.capypomodoro
+10-11 17:28:31.083 D/ProfileInstaller( 3505): Installing profile for com.capypomodoro
+10-11 17:28:32.364 I/BlockstoreStorage( 1271): Clearing Blockstore Data for package com.capypomodoro [CONTEXT service_id=258 ]
+10-11 17:28:32.528 I/FontLog ( 1046): Package com.capypomodoro has no metadata [CONTEXT service_id=132 ]
+10-11 17:28:34.166 D/AndroidRuntime( 3822): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:28:34.220 I/AndroidRuntime( 3822): Using default boot image
+10-11 17:28:34.220 I/AndroidRuntime( 3822): Leaving lock profiling enabled
+10-11 17:28:34.500 D/AndroidRuntime( 3822): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:28:34.646 I/AiAiEcho( 1571): EchoSearch: AppFetcherImpl is initialized with [19] apps [time=471, reason=com.capypomodoro is added]
+10-11 17:28:36.314 D/AndroidRuntime( 3822): Shutting down VM
+10-11 17:28:37.441 V/ActivityThread( 3505): getPackageInfo() caused update to cached ApplicationInfo for package com.capypomodoro
+10-11 17:28:37.476 I/ExoPlayerImpl( 3505): Init 9162da0 [AndroidXMedia3/1.7.1] [emu64x, sdk_gphone64_x86_64, Google, 33]
+10-11 17:28:37.997 V/ActivityThread(  484): getPackageInfo() caused update to cached ApplicationInfo for package com.capypomodoro
+10-11 17:28:38.287 I/MediaFocusControl(  484): requestAudioFocus() from uid/pid 10174/3505 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@c1b3532v1.c@8771283 callingPack=com.capypomodoro req=1 flags=0x0 sdk=36
+10-11 17:28:43.197 D/AndroidRuntime( 4413): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:28:43.289 I/AndroidRuntime( 4413): Using default boot image
+10-11 17:28:43.289 I/AndroidRuntime( 4413): Leaving lock profiling enabled
+10-11 17:28:43.787 D/AndroidRuntime( 4413): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:28:44.869 D/AndroidRuntime( 4413): Shutting down VM
+10-11 17:28:49.618 D/AndroidRuntime( 4652): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:28:49.649 I/AndroidRuntime( 4652): Using default boot image
+10-11 17:28:49.649 I/AndroidRuntime( 4652): Leaving lock profiling enabled
+10-11 17:28:50.145 D/AndroidRuntime( 4652): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:28:51.275 D/AndroidRuntime( 4652): Shutting down VM
+10-11 17:28:56.057 I/HibernationPolicy( 4758): Usage stats for user 0: {com.google.android.networkstack.tethering=Sun Oct 11 17:27:53 UTC 2026, com.android.cts.priv.ctsshim=Thu Jan 01 00:00:00 UTC 1970, com.google.android.youtube=Sun Oct 11 17:28:07 UTC 2026, com.android.internal.display.cutout.emulation.corner=Thu Jan 01 00:00:00 UTC 1970, com.google.android.ext.services=Sun Oct 11 17:27:54 UTC 2026, com.android.internal.display.cutout.emulation.double=Thu Jan 01 00:00:00 UTC 1970, com.android.providers.telephony=Thu Jan 01 00:00:00 UTC 1970, com.android.dynsystem=Thu Jan 01 00:00:00 UTC 1970, com.google.android.googlequicksearchbox=Sun Oct 11 17:28:35 UTC 2026, com.google.android.cellbroadcastservice=Sun Oct 11 17:27:55 UTC 2026, com.android.providers.calendar=Sun Oct 11 17:28:32 UTC 2026, com.android.providers.media=Sun Oct 11 17:28:04 UTC 2026, com.google.android.onetimeinitializer=Thu Jan 01 00:00:00 UTC 1970, com.google.android.ext.shared=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.systemui.navbar.gestural_wide_back=Thu Jan 01 00:00:00 UTC 1970, com.android.wallpapercropper=Thu Jan 01 00:00:00 UTC 1970, com.android.managedprovisioning.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.android.carrierconfig.auto_generated_rro_vendor__=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.emulation.pixel_3_xl=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.emulation.pixel_4_xl=Thu Jan 01 00:00:00 UTC 1970, com.android.simappdialog.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.android.externalstorage=Thu Jan 01 00:00:00 UTC 1970, com.android.htmlviewer=Thu Jan 01 00:00:00 UTC 1970, com.android.companiondevicemanager=Thu Jan 01 00:00:00 UTC 1970, com.android.mms.service=Thu Jan 01 00:00:00 UTC 1970, com.android.providers.downloads=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.auto_generated_rro_product__=Thu Jan 01 00:00:00 UTC 1970, com.google.android.apps.messaging=Sun Oct 11 17:28:51 UTC 2026, com.google.android.soundpicker=Thu Jan 01 00:00:00 UTC 1970, com.breel.wallpapers18=Thu Jan 01 00:00:00 UTC 1970, com.capypomodoro=Sun Oct 11 17:28:25 UTC 2026, com.google.android.marvin.talkbackoverlay=Thu Jan 01 00:00:00 UTC 1970, com.google.android.configupdater=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_3a_xl=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_6_pro=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_7_pro=Thu Jan 01 00:00:00 UTC 1970, com.google.android.providers.media.module=Sun Oct 11 17:28:35 UTC 2026, com.android.internal.emulation.pixel_3a=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_4a=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.emulation.pixel_6a=Thu Jan 01 00:00:00 UTC 1970, com.google.android.overlay.googlewebview=Thu Jan 01 00:00:00 UTC 1970, com.android.systemui.plugin.globalactions.wallet=Thu Jan 01 00:00:00 UTC 1970, com.android.providers.downloads.ui=Thu Jan 01 00:00:00 UTC 1970, com.google.android.hotspot2.osulogin=Thu Jan 01 00:00:00 UTC 1970, com.android.vending=Thu Jan 01 00:00:00 UTC 1970, com.android.pacprocessor=Thu Jan 01 00:00:00 UTC 1970, com.android.simappdialog=Thu Jan 01 00:00:00 UTC 1970, com.google.android.adservices.api=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.display.cutout.emulation.hole=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.display.cutout.emulation.tall=Thu Jan 01 00:00:00 UTC 1970, com.android.certinstaller=Thu Jan 01 00:00:00 UTC 1970, com.android.carrierconfig=Sun Oct 11 17:28:03 UTC 2026, com.google.android.marvin.talkback=Thu Jan 01 00:00:00 UTC 1970, com.android.internal.systemui.navbar.threebutton=Thu Jan 01 00:00:00 UTC 1970, android=Thu Jan 01 00:00:00 UTC 1970, com.google.android.sdksandbox=Thu Jan 01 00:00:00 UTC 1970, com.android.egg=Thu Jan 01 00:00:00 UTC 1970, com.android.mtp=Thu Jan 01 00:00:00 UTC 1970, com.android.nfc=Thu Jan 01 00:00:00 UTC 1970, com.android.ons=Sun Oct 11 17:28:02 UTC 2026, com.android.stk=Sun Oct 11 17:27:58 UTC 2026, com.android.backupconfirm=Thu Jan 01 00:00
+10-11 17:28:56.909 I/GoogleInputMethodService( 1483): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.capypomodoro fieldId=-1 fieldName=null extras=null}, false)
+10-11 17:28:57.841 D/AndroidRuntime( 5006): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:28:57.875 I/AndroidRuntime( 5006): Using default boot image
+10-11 17:28:57.875 I/AndroidRuntime( 5006): Leaving lock profiling enabled
+10-11 17:28:58.243 D/AndroidRuntime( 5006): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:28:59.350 D/AndroidRuntime( 5006): Shutting down VM
+10-11 17:29:02.586 I/AndroidRuntime( 4394): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:03.086 I/AndroidRuntime( 5119): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:07.765 D/AndroidRuntime( 5228): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:07.780 I/AndroidRuntime( 5228): Using default boot image
+10-11 17:29:07.780 I/AndroidRuntime( 5228): Leaving lock profiling enabled
+10-11 17:29:08.156 D/AndroidRuntime( 5228): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:09.456 D/AndroidRuntime( 5228): Shutting down VM
+10-11 17:29:13.899 D/AndroidRuntime( 5318): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:13.913 I/AndroidRuntime( 5318): Using default boot image
+10-11 17:29:13.913 I/AndroidRuntime( 5318): Leaving lock profiling enabled
+10-11 17:29:14.195 D/AndroidRuntime( 5318): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:15.278 D/AndroidRuntime( 5318): Shutting down VM
+10-11 17:29:20.217 I/ExoPlayerImpl( 3505): Release 9162da0 [AndroidXMedia3/1.7.1] [emu64x, sdk_gphone64_x86_64, Google, 33] [media3.common, media3.exoplayer, media3.decoder, media3.datasource, media3.extractor]
+10-11 17:29:20.612 D/AndroidRuntime( 5429): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:20.651 I/AndroidRuntime( 5429): Using default boot image
+10-11 17:29:20.651 I/AndroidRuntime( 5429): Leaving lock profiling enabled
+10-11 17:29:20.985 D/AndroidRuntime( 5429): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:22.063 D/AndroidRuntime( 5429): Shutting down VM
+10-11 17:29:24.694 I/AndroidRuntime( 5432): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:27.495 I/AndroidRuntime( 5639): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:29.426 I/AndroidRuntime( 5709): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:30.978 I/AndroidRuntime( 5745): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:32.319 I/AndroidRuntime( 5781): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:33.440 I/AndroidRuntime( 5813): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:33.501 D/AndroidRuntime( 5832): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:33.534 I/AndroidRuntime( 5832): Using default boot image
+10-11 17:29:33.534 I/AndroidRuntime( 5832): Leaving lock profiling enabled
+10-11 17:29:33.906 D/AndroidRuntime( 5832): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:33.919 I/AndroidRuntime( 5840): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:34.306 I/AndroidRuntime( 5870): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:34.705 I/AndroidRuntime( 5899): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:34.929 I/AndroidRuntime( 5937): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:35.184 D/AndroidRuntime( 5832): Shutting down VM
+10-11 17:29:35.231 I/AndroidRuntime( 5958): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:35.370 I/AndroidRuntime( 5977): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:35.523 I/AndroidRuntime( 5995): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:35.661 I/AndroidRuntime( 6020): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:35.772 I/AndroidRuntime( 6038): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:35.876 I/AndroidRuntime( 6056): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:36.047 I/AndroidRuntime( 6073): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:36.192 I/AndroidRuntime( 6094): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:36.316 I/AndroidRuntime( 6118): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:36.451 I/AndroidRuntime( 6136): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:36.781 I/AndroidRuntime( 6155): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:36.851 I/AndroidRuntime( 6173): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:36.953 I/AndroidRuntime( 6191): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.025 I/AndroidRuntime( 6209): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.116 I/AndroidRuntime( 6227): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.213 I/AndroidRuntime( 6245): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.292 I/AndroidRuntime( 6263): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.413 I/AndroidRuntime( 6280): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.639 I/AndroidRuntime( 6297): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.713 I/AndroidRuntime( 6315): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:37.774 I/AndroidRuntime( 6333): VM exiting with result code 0, cleanup skipped.
+10-11 17:29:38.883 D/AndroidRuntime( 6410): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:38.896 I/AndroidRuntime( 6410): Using default boot image
+10-11 17:29:38.897 I/AndroidRuntime( 6410): Leaving lock profiling enabled
+10-11 17:29:39.021 D/AndroidRuntime( 6410): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:40.082 D/AndroidRuntime( 6410): Shutting down VM
+10-11 17:29:41.385 D/AndroidRuntime( 6693): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:41.397 I/AndroidRuntime( 6693): Using default boot image
+10-11 17:29:41.402 I/AndroidRuntime( 6693): Leaving lock profiling enabled
+10-11 17:29:41.661 D/AndroidRuntime( 6693): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:42.788 D/AndroidRuntime( 6693): Shutting down VM
+10-11 17:29:50.376 D/AndroidRuntime( 6922): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:50.379 I/AndroidRuntime( 6922): Using default boot image
+10-11 17:29:50.379 I/AndroidRuntime( 6922): Leaving lock profiling enabled
+10-11 17:29:50.499 D/AndroidRuntime( 6922): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:51.569 D/AndroidRuntime( 6922): Shutting down VM
+10-11 17:29:56.685 D/AndroidRuntime( 7018): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:29:56.695 I/AndroidRuntime( 7018): Using default boot image
+10-11 17:29:56.695 I/AndroidRuntime( 7018): Leaving lock profiling enabled
+10-11 17:29:56.980 D/AndroidRuntime( 7018): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:29:58.114 D/AndroidRuntime( 7018): Shutting down VM
+10-11 17:30:02.044 I/AndroidRuntime( 7075): VM exiting with result code 0, cleanup skipped.
+10-11 17:30:02.237 I/AndroidRuntime( 7093): VM exiting with result code 0, cleanup skipped.
+10-11 17:30:02.284 I/AndroidRuntime( 7110): VM exiting with result code 0, cleanup skipped.
+10-11 17:30:02.692 D/AndroidRuntime( 7128): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:02.697 I/AndroidRuntime( 7128): Using default boot image
+10-11 17:30:02.697 I/AndroidRuntime( 7128): Leaving lock profiling enabled
+10-11 17:30:02.791 D/AndroidRuntime( 7128): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:03.836 D/AndroidRuntime( 7128): Shutting down VM
+10-11 17:30:08.868 D/AndroidRuntime( 7268): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:08.871 I/AndroidRuntime( 7268): Using default boot image
+10-11 17:30:08.871 I/AndroidRuntime( 7268): Leaving lock profiling enabled
+10-11 17:30:08.945 D/AndroidRuntime( 7268): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:09.966 D/AndroidRuntime( 7268): Shutting down VM
+10-11 17:30:12.885 D/AndroidRuntime( 7296): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:12.888 I/AndroidRuntime( 7296): Using default boot image
+10-11 17:30:12.888 I/AndroidRuntime( 7296): Leaving lock profiling enabled
+10-11 17:30:12.971 D/AndroidRuntime( 7296): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:14.006 D/AndroidRuntime( 7296): Shutting down VM
+10-11 17:30:15.263 D/AndroidRuntime( 7320): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:15.269 I/AndroidRuntime( 7320): Using default boot image
+10-11 17:30:15.269 I/AndroidRuntime( 7320): Leaving lock profiling enabled
+10-11 17:30:15.346 D/AndroidRuntime( 7320): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:16.377 D/AndroidRuntime( 7320): Shutting down VM
+10-11 17:30:17.618 D/AndroidRuntime( 7344): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:17.620 I/AndroidRuntime( 7344): Using default boot image
+10-11 17:30:17.620 I/AndroidRuntime( 7344): Leaving lock profiling enabled
+10-11 17:30:17.692 D/AndroidRuntime( 7344): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:18.743 D/AndroidRuntime( 7344): Shutting down VM
+10-11 17:30:20.003 D/AndroidRuntime( 7370): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:20.005 I/AndroidRuntime( 7370): Using default boot image
+10-11 17:30:20.005 I/AndroidRuntime( 7370): Leaving lock profiling enabled
+10-11 17:30:20.076 D/AndroidRuntime( 7370): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:21.107 D/AndroidRuntime( 7370): Shutting down VM
+10-11 17:30:25.643 D/AndroidRuntime( 7412): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:25.646 I/AndroidRuntime( 7412): Using default boot image
+10-11 17:30:25.646 I/AndroidRuntime( 7412): Leaving lock profiling enabled
+10-11 17:30:25.719 D/AndroidRuntime( 7412): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:26.741 D/AndroidRuntime( 7412): Shutting down VM
+10-11 17:30:28.659 D/AndroidRuntime( 7435): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:30:28.661 I/AndroidRuntime( 7435): Using default boot image
+10-11 17:30:28.661 I/AndroidRuntime( 7435): Leaving lock profiling enabled
+10-11 17:30:28.731 D/AndroidRuntime( 7435): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:30:29.745 D/AndroidRuntime( 7435): Shutting down VM
+10-11 17:30:30.670 I/ExoPlayerImpl( 3505): Init cad0b68 [AndroidXMedia3/1.7.1] [emu64x, sdk_gphone64_x86_64, Google, 33]
+10-11 17:30:30.819 I/MediaFocusControl(  484): requestAudioFocus() from uid/pid 10174/3505 AA=USAGE_MEDIA/CONTENT_TYPE_MUSIC clientId=android.media.AudioManager@c1b3532v1.c@ea773ac callingPack=com.capypomodoro req=1 flags=0x0 sdk=36
+10-11 17:31:38.797 D/AndroidRuntime( 7554): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-11 17:31:38.812 I/AndroidRuntime( 7554): Using default boot image
+10-11 17:31:38.812 I/AndroidRuntime( 7554): Leaving lock profiling enabled
+10-11 17:31:38.892 D/AndroidRuntime( 7554): Calling main entry com.android.commands.uiautomator.Launcher
+10-11 17:31:39.909 D/AndroidRuntime( 7554): Shutting down VM
+10-11 17:32:03.177 I/GoogleInputMethodService( 1483): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.capypomodoro fieldId=-1 fieldName=null extras=null}, false)
