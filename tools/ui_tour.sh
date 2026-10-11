@@ -46,16 +46,27 @@ adb shell input swipe 540 1900 540 700 400; shot 10_settings_bottom 2
 tap "Pink gingham";           shot 11_settings_gingham 2
 tap "Ocean waves"
 tap "Save settings";          shot 12_settings_saved 2
-tap "Back to timer";          shot 13_long_break_gingham 3
+adb shell input keyevent KEYCODE_BACK; shot 13_long_break_gingham 3
 tap "Focus";                  shot 14_focus_gingham 3
 tap "Settings"; sleep 2
-tap "Cozy capy room"; tap "Back to timer"; shot 15_focus_room 3
+adb shell input swipe 540 1900 540 900 400; sleep 1
+tap "Cozy capy room"
+adb shell input keyevent KEYCODE_BACK; shot 15_focus_room 3
+
+# A phase that runs out on its own: 1-minute short break, chime, auto-start into Focus round 2.
+tap "Settings"; sleep 2
+for i in 1 2 3 4; do tap "Decrease Short break"; sleep 0.3; done
+shot 16_short_break_1min 1
+adb shell input keyevent KEYCODE_BACK; sleep 2
+tap "Short break"; sleep 1
+tap "Start timer"; shot 17_break_1min_running 3
+sleep 60;                     shot 18_after_break_ended 2
 
 # Turning the screen off for a bit must not kill the countdown.
 tap "Start timer"; sleep 2
 adb shell input keyevent KEYCODE_SLEEP; sleep 20; adb shell input keyevent KEYCODE_WAKEUP; sleep 2
 adb shell wm dismiss-keyguard 2>/dev/null || adb shell input keyevent 82
-shot 16_after_screen_off 3
+shot 19_after_screen_off 3
 
 adb shell dumpsys activity services $PKG > "$OUT/services.txt" 2>&1
 adb logcat -d -v time > "$OUT/logcat_all.txt"

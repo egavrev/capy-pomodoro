@@ -91,8 +91,8 @@ fun SettingsScreen(
             .fillMaxSize()
             .background(CapyColors.BlushBg)
             .polkaDots()
+            .statusBarsPadding() // outside the scroll, so cards never slide under the status bar
             .verticalScroll(rememberScrollState())
-            .statusBarsPadding()
             .navigationBarsPadding()
             .padding(start = 20.dp, end = 20.dp, top = 20.dp, bottom = 32.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
