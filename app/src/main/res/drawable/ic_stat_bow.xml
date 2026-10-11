@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Notification small icon: white bow silhouette. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+  <group android:translateY="11">
+    <path android:fillColor="#FFFFFFFF" android:pathData="M30,22 L21,39 L27,37 L30,41 L33,24 Z M34,22 L43,39 L37,37 L34,41 L31,24 Z M32,20 C22,5 5,3 5,16 C5,29 22,31 32,20 Z M32,20 C42,5 59,3 59,16 C59,29 42,31 32,20 Z M31,14 H33 A4,4 0 0 1 37,18 V22 A4,4 0 0 1 33,26 H31 A4,4 0 0 1 27,22 V18 A4,4 0 0 1 31,14 Z"/>
+  </group>
+</vector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Converted from assets/images/bow.svg (64x42 viewBox). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="42dp"
+    android:viewportWidth="64"
+    android:viewportHeight="42">
+    <path android:pathData="M30,22 L21,39 L27,37 L30,41 L33,24 Z" android:fillColor="#F7B3C4" android:strokeColor="#C9506F" android:strokeWidth="1.6" android:strokeLineJoin="round"/>
+    <path android:pathData="M34,22 L43,39 L37,37 L34,41 L31,24 Z" android:fillColor="#F7B3C4" android:strokeColor="#C9506F" android:strokeWidth="1.6" android:strokeLineJoin="round"/>
+    <path android:pathData="M32,20 C22,5 5,3 5,16 C5,29 22,31 32,20 Z" android:fillColor="#F7B3C4" android:strokeColor="#C9506F" android:strokeWidth="1.6"/>
+    <path android:pathData="M32,20 C42,5 59,3 59,16 C59,29 42,31 32,20 Z" android:fillColor="#F7B3C4" android:strokeColor="#C9506F" android:strokeWidth="1.6"/>
+    <path android:pathData="M28,19 C21,13 14,12 11,15" android:strokeColor="#C9506F" android:strokeWidth="1.3" android:strokeLineCap="round"/>
+    <path android:pathData="M36,19 C43,13 50,12 53,15" android:strokeColor="#C9506F" android:strokeWidth="1.3" android:strokeLineCap="round"/>
+    <path android:pathData="M31,14 H33 A4,4 0 0 1 37,18 V22 A4,4 0 0 1 33,26 H31 A4,4 0 0 1 27,22 V18 A4,4 0 0 1 31,14 Z" android:fillColor="#F29BB3" android:strokeColor="#C9506F" android:strokeWidth="1.6"/>
+</vector>

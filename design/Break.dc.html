@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Capy Pomodoro – Break</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;family=Nunito:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#B8456A}a:hover{color:#8E2F50}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; font-family: Nunito, sans-serif; color: #4A2C36; background-color: #FFF5F8; background-image: radial-gradient(#F7C9D6 1.6px, transparent 1.8px); background-size: 20px 20px; overflow: hidden">
+
+  <div style="position: relative; width: 390px; height: 390px; flex-shrink: 0; border-radius: 0 0 44px 44px; overflow: hidden; background: #FCE1E9">
+    <img src="{{p.img}}" alt="{{p.alt}}" style="width: 100%; height: 100%; object-fit: cover; object-position: {{p.pos}}; display: block">
+    <div style="position: absolute; left: 20px; right: 20px; top: 20px; display: flex; align-items: center; justify-content: space-between">
+      <span style="padding: 8px 14px; border-radius: 18px; background: rgba(255,255,255,0.92); font-family: Fredoka, sans-serif; font-weight: 600; font-size: 17px; color: #4A2C36">Capy Pomodoro</span>
+      <a href="Settings.dc.html" aria-label="Settings" style="width: 44px; height: 44px; border-radius: 22px; background: rgba(255,255,255,0.92); display: flex; align-items: center; justify-content: center; color: #B8456A">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.830 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.650 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      </a>
+    </div>
+  </div>
+
+  <div style="position: relative; margin: -56px 24px 0; padding: 30px 22px 20px; background: #FFFFFF; border-radius: 30px; box-shadow: 0 8px 24px rgba(184,69,106,0.16); display: flex; flex-direction: column; align-items: center; gap: 10px">
+    <svg width="84" height="56" viewBox="0 0 64 42" aria-hidden="true" style="position: absolute; left: 50%; top: -30px; margin-left: -42px"><path d="M30 22 L21 39 L27 37 L30 41 L33 24 Z" fill="#F7B3C4" stroke="#C9506F" stroke-width="1.6" stroke-linejoin="round"></path><path d="M34 22 L43 39 L37 37 L34 41 L31 24 Z" fill="#F7B3C4" stroke="#C9506F" stroke-width="1.6" stroke-linejoin="round"></path><path d="M32 20 C22 5 5 3 5 16 C5 29 22 31 32 20 Z" fill="#F7B3C4" stroke="#C9506F" stroke-width="1.6"></path><path d="M32 20 C42 5 59 3 59 16 C59 29 42 31 32 20 Z" fill="#F7B3C4" stroke="#C9506F" stroke-width="1.6"></path><path d="M28 19 C21 13 14 12 11 15" fill="none" stroke="#C9506F" stroke-width="1.3" stroke-linecap="round"></path><path d="M36 19 C43 13 50 12 53 15" fill="none" stroke="#C9506F" stroke-width="1.3" stroke-linecap="round"></path><rect x="27" y="14" width="10" height="12" rx="4" fill="#F29BB3" stroke="#C9506F" stroke-width="1.6"></rect></svg>
+    <div role="tablist" aria-label="Phase" style="display: flex; gap: 4px; padding: 4px; background: #FFF0F4; border-radius: 22px">
+      <sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+        <button role="tab" aria-selected="{{t.selected}}" onClick="{{t.pick}}" style="height: 44px; padding: 0 14px; border: none; border-radius: 20px; font-family: Nunito, sans-serif; font-weight: 800; font-size: 13px; cursor: pointer; background: {{t.bg}}; color: {{t.fg}}">{{t.label}}</button>
+      </sc-for>
+    </div>
+    <div style="font-family: Fredoka, sans-serif; font-weight: 600; font-size: 60px; line-height: 1; color: #4A2C36; margin-top: 4px">{{time}}</div>
+    <div style="width: 100%; height: 12px; border-radius: 6px; background: #FCE1E9; overflow: hidden">
+      <div style="height: 12px; border-radius: 6px; background: #E77C99; width: {{pct}}%; transition: width 0.9s linear"></div>
+    </div>
+    <div style="width: 100%; display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; color: #7E5A66">
+      <span>{{p.line}}</span>
+      <span>Next: {{nextLabel}}</span>
+    </div>
+  </div>
+
+  <div style="margin: 16px 24px 0; display: flex; align-items: center; gap: 12px; padding: 12px 12px 12px 14px; background: #FFFFFF; border-radius: 22px; box-shadow: 0 2px 10px rgba(184,69,106,0.10)">
+    <div style="width: 44px; height: 44px; border-radius: 14px; background: #FCE1E9; display: flex; align-items: center; justify-content: center; color: #B8456A; flex-shrink: 0">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+    </div>
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+      <span style="font-weight: 800; font-size: 15px; color: #4A2C36">{{p.music}}</span>
+      <span style="font-size: 13px; font-weight: 600; color: #7E5A66">{{musicSub}}</span>
+    </div>
+    <button onClick="{{toggleMute}}" aria-label="{{muteLabel}}" style="width: 44px; height: 44px; border: none; border-radius: 22px; background: #FFF0F4; color: #B8456A; display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <sc-if value="{{muted}}" hint-placeholder-val="{{ false }}">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+      </sc-if>
+      <sc-if value="{{audible}}" hint-placeholder-val="{{ true }}">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
+      </sc-if>
+    </button>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 28px; margin: auto 0 32px">
+    <button onClick="{{reset}}" aria-label="Reset timer" style="width: 56px; height: 56px; border: none; border-radius: 28px; background: #FFFFFF; color: #B8456A; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 10px rgba(184,69,106,0.12)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5"></path></svg>
+    </button>
+    <button onClick="{{toggle}}" aria-label="{{playLabel}}" style="width: 88px; height: 88px; border: 5px solid #FFFFFF; border-radius: 44px; background: #B8456A; color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 8px 20px rgba(184,69,106,0.30)">
+      <sc-if value="{{running}}" hint-placeholder-val="{{ false }}">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.5"></rect><rect x="14" y="5" width="4" height="14" rx="1.5"></rect></svg>
+      </sc-if>
+      <sc-if value="{{paused}}" hint-placeholder-val="{{ true }}">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10-6.5a1 1 0 0 0 0-1.72l-10-6.5A1 1 0 0 0 8 5.5z"></path></svg>
+      </sc-if>
+    </button>
+    <a href="Main.dc.html" aria-label="Skip to focus" style="width: 56px; height: 56px; border-radius: 28px; background: #FFFFFF; color: #B8456A; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(184,69,106,0.12)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4l10 8-10 8V4z"></path><line x1="19" y1="5" x2="19" y2="19"></line></svg>
+    </a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"phase":{"editor":"enum","options":["short","long","focus"],"default":"short"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    const ph = props.phase || 'short';
+    this.state = { phase: ph, running: false, muted: false, remaining: this.mins(ph) * 60 - 48 };
+  }
+  mins(ph) { return ph === 'focus' ? 25 : ph === 'short' ? 5 : 15; }
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      if (!this.state.running) return;
+      const r = this.state.remaining - 1;
+      if (r <= 0) { this.setPhase(this.state.phase === 'focus' ? 'short' : 'focus', true); } else { this.setState({ remaining: r }); }
+    }, 1000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  setPhase(ph, keepRunning) {
+    this.setState({ phase: ph, remaining: this.mins(ph) * 60, running: !!keepRunning });
+  }
+  renderVals() {
+    const study = '../assets/images/capy_study.png';
+    const relax = '../assets/images/capy_relax.png';
+    const P = {
+      focus: { img: study, alt: 'Capybara with a pink bow writing in a notebook', pos: '45% 30%', line: 'Small steps, big dreams', music: 'Lo-fi rain' },
+      short: { img: relax, alt: 'Capybara with a pink bow relaxing on a beanbag', pos: '42% 50%', line: 'Rest those little paws', music: 'Birdsong & piano' },
+      long: { img: relax, alt: 'Capybara with a pink bow relaxing on a beanbag', pos: '42% 50%', line: 'Stretch, sip, breathe', music: 'Ocean waves' }
+    };
+    const ph = this.state.phase;
+    const total = this.mins(ph) * 60;
+    const rem = this.state.remaining;
+    const mm = String(Math.floor(rem / 60)).padStart(2, '0');
+    const ss = String(rem % 60).padStart(2, '0');
+    const labels = { focus: 'Focus', short: 'Short break', long: 'Long break' };
+    const tabs = ['focus', 'short', 'long'].map((id) => ({
+      label: labels[id],
+      selected: id === ph ? 'true' : 'false',
+      bg: id === ph ? '#B8456A' : 'transparent',
+      fg: id === ph ? '#FFFFFF' : '#7E5A66',
+      pick: () => this.setPhase(id, false)
+    }));
+    const muted = this.state.muted;
+    return {
+      p: P[ph],
+      tabs,
+      time: mm + ':' + ss,
+      pct: Math.round(100 * (1 - rem / total)),
+      nextLabel: ph === 'focus' ? 'Short break' : 'Focus · round 3',
+      running: this.state.running,
+      paused: !this.state.running,
+      playLabel: this.state.running ? 'Pause timer' : 'Start timer',
+      muted,
+      audible: !muted,
+      muteLabel: muted ? 'Unmute music' : 'Mute music',
+      musicSub: muted ? 'Muted' : (ph === 'focus' ? 'Focus sound · playing' : 'Break sound · playing'),
+      toggle: () => this.setState({ running: !this.state.running }),
+      reset: () => this.setPhase(ph, false),
+      toggleMute: () => this.setState({ muted: !muted })
+    };
+  }
+}
+</script>
+</body>
+</html>

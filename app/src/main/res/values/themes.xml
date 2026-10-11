@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window theme only; everything visible is drawn by Compose (see ui/theme). -->
+    <style name="Theme.CapyPomodoro" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/blush_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

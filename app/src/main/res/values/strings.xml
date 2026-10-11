@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Capy Pomodoro</string>
+
+    <!-- Phases -->
+    <string name="phase_focus">Focus</string>
+    <string name="phase_short">Short break</string>
+    <string name="phase_long">Long break</string>
+    <string name="line_focus">Small steps, big dreams</string>
+    <string name="line_short">Rest those little paws</string>
+    <string name="line_long">Stretch, sip, breathe</string>
+    <string name="round_of">Round %1$d of %2$d</string>
+    <string name="next_focus_round">Next: Focus · round %1$d</string>
+    <string name="next_phase">Next: %1$s</string>
+
+    <!-- Timer controls -->
+    <string name="cd_settings">Settings</string>
+    <string name="cd_reset">Reset timer</string>
+    <string name="cd_start">Start timer</string>
+    <string name="cd_pause">Pause timer</string>
+    <string name="cd_skip">Skip to next phase</string>
+    <string name="cd_mute">Mute music</string>
+    <string name="cd_unmute">Unmute music</string>
+    <string name="cd_time_left">%1$d minutes left</string>
+    <string name="cd_time_left_seconds">Less than a minute left</string>
+    <string name="cd_focus_image">Capybara with a pink bow writing in a notebook</string>
+    <string name="cd_break_image">Capybara with a pink bow relaxing on a beanbag</string>
+
+    <!-- Now playing -->
+    <string name="music_focus_playing">Focus sound · playing</string>
+    <string name="music_break_playing">Break sound · playing</string>
+    <string name="music_ready">Plays when the timer runs</string>
+    <string name="music_paused">Paused</string>
+    <string name="music_muted">Muted</string>
+    <string name="music_off">No music for this phase</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="cd_back">Back to timer</string>
+    <string name="section_timer">Timer</string>
+    <string name="section_background">Background</string>
+    <string name="section_music">Music</string>
+    <string name="set_focus">Focus</string>
+    <string name="set_focus_hint">Study time per round</string>
+    <string name="set_short">Short break</string>
+    <string name="set_short_hint">After each focus round</string>
+    <string name="set_long">Long break</string>
+    <string name="set_long_hint">After all rounds</string>
+    <string name="set_rounds">Rounds</string>
+    <string name="set_rounds_hint">Before a long break</string>
+    <string name="unit_min">%1$d min</string>
+    <string name="cd_decrease">Decrease %1$s</string>
+    <string name="cd_increase">Increase %1$s</string>
+    <string name="set_autostart">Auto-start next phase</string>
+    <string name="set_autostart_hint">No tap needed between phases</string>
+    <string name="set_chime">Chime when a phase ends</string>
+    <string name="set_chime_hint">A soft bell, even when muted</string>
+    <string name="set_keep_awake">Keep screen on during focus</string>
+    <string name="set_keep_awake_hint">Handy on a desk stand</string>
+    <string name="bg_dots">Blush dots</string>
+    <string name="bg_gingham">Pink gingham</string>
+    <string name="bg_cream">Plain cream</string>
+    <string name="bg_room">Cozy capy room</string>
+    <string name="music_during_focus">During focus</string>
+    <string name="music_during_breaks">During breaks</string>
+    <string name="volume">Volume</string>
+    <string name="percent">%1$d%%</string>
+    <string name="save_settings">Save settings</string>
+    <string name="saved">Saved</string>
+
+    <!-- Music (titles for audio/Tracks.kt) -->
+    <string name="track_rain">Lo-fi rain</string>
+    <string name="track_piano">Soft piano</string>
+    <string name="track_cafe">Café murmur</string>
+    <string name="track_birds">Birdsong &amp; piano</string>
+    <string name="track_ocean">Ocean waves</string>
+    <string name="track_musicbox">Music box</string>
+    <string name="track_none">No music</string>
+
+    <!-- Notifications -->
+    <string name="channel_timer">Timer</string>
+    <string name="channel_timer_desc">Shows the running timer</string>
+    <string name="channel_alerts">Phase finished</string>
+    <string name="channel_alerts_desc">Tells you when a focus or break ends</string>
+    <string name="notif_left">%1$s left</string>
+    <string name="notif_paused">Paused · %1$s left</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_skip">Skip</string>
+    <string name="notif_done_title">%1$s finished</string>
+    <string name="notif_done_text">Tap to start %1$s</string>
+</resources>
